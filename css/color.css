@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+#master{
+  height: 300px;
+}
+.color{
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+#pink{
+  background-color: #d96459;
+}
+#yellow{
+  background-color: #f2e394;
+}
+#sand{
+  background-color: #f2ae72;
+}
+#blue{
+  background-color: #588c7e;
+}
