@@ -20,6 +20,8 @@
 body{
   background-color: #f2e394;
 }
+
+/* ----------- Menu --------------*/
 ul{
   width: 100%;
   height: 60px;
@@ -32,7 +34,12 @@ li{
   display: inline-block;
   float: left;
 }
-
+#samll-menu{
+  display: none;
+}
+#menu{
+  display: none;
+}
 .button{
   text-decoration: none;
   font-size: 20px;
@@ -48,22 +55,29 @@ li{
   color:  #d96459;
 }
 
+/*----------- Main Area------------*/
 .container{
   width: 100%;
   display: block;
   padding-top: 60px;
 }
+
+/*----------- Landing Page ------------*/
 .center{
-    position: absolute;
+      position: fixed;;
     color: #d96459;
     left: 0;
-    top: 40%;
+    height: 100%;
     width: 100%;
     text-align: center;
     font-size: 180px;
     font-weight: bold;
+    background-image: url(../img/background-traveler.jpg);
+    background-size: cover;
+    display: block;
 }
 
+/*----------- Form ------------*/
 input, textarea{
   display: block;
   width: 100%;
@@ -95,6 +109,7 @@ textarea:focus{
   content: "";
 }
 
+/*----------- Text ------------*/
 p, h1{
   margin: auto;
   width: 70%;
@@ -108,6 +123,13 @@ h1{
   display: block;
   padding: 30px;
 }
+.right{
+  font-weight: normal;
+  text-align: right;
+  font-style: italic;
+}
+
+/*----------- Color page ------------*/
 #master{
   height: 300px;
 }
@@ -129,56 +151,135 @@ h1{
 #blue{
   background-color: #588c7e;
 }
-.right{
-  font-weight: normal;
-  text-align: right;
-  font-style: italic;
-}
+
+/*----------- Gallery ------------*/
 img{
   width: 100%;
 
 }
-.rwd img{
-  overflow: hidden;
-
-}
 .rwd{
-
-  width: 24.9999%;
-  overflow: hidden;
-  display: block;
+  background-size: cover;
+  width: 25%;
+  padding-top: 15%;
   float: left;
-  padding: 10px;
+
 }
 .rwd:hover{
   opacity: 0.82;
 
 }
+#gall_1{
+    background-image: url('../gallery/meteoryt/meteoryt (1).jpg');
+}
+#gall_2{
+    background-image: url('../gallery/meteoryt/meteoryt (2).jpg');
+}
+#gall_3{
+    background-image: url('../gallery/meteoryt/meteoryt (3).jpg');
+}
+#gall_4{
+    background-image: url('../gallery/meteoryt/meteoryt (4).jpg');
+}
+#gall_5{
+    background-image: url('../gallery/meteoryt/meteoryt (5).jpg');
+}
+#gall_6{
+    background-image: url('../gallery/meteoryt/meteoryt (6).jpg');
+}
+#gall_7{
+    background-image: url('../gallery/meteoryt/meteoryt (7).jpg');
+}
+#gall_8{
+    background-image: url('../gallery/meteoryt/meteoryt (8).jpg');
+}
+#gall_9{
+    background-image: url('../gallery/meteoryt/meteoryt (9).jpg');
+}
+#gall_10{
+    background-image: url('../gallery/meteoryt/meteoryt (10).jpg');
+}
+#gall_11{
+    background-image: url('../gallery/meteoryt/meteoryt (11).jpg');
+}
+#gall_12{
+    background-image: url('../gallery/meteoryt/meteoryt (12).jpg');
+}
+
+/*----------- Responsive ------------*/
+@media only screen and (max-width:900px){
+  .center{
+      font-size: 140px;
+  }
+}
+@media only screen and (max-width:700px){
+  .center{
+      font-size: 120px;
+  }
+}
 
 @media only screen and ( orientation : portrait){
+  form{
+    width: 90%;
+    height: auto;
+  }
   .rwd{
-    width: 49.9999%;
+    width: 50%;
+    padding-top: 30%;
   }
   .container{
-    padding-top: 200px;
+    padding-top: 0px;
   }
-  ul{
-    width: 100%;
-    height: 200px;
-  }
-  li{
-  width: 100%;
+  #samll-menu{
+    text-align: center;
+    padding-top: 40px;
     display: block;
+    height: 120px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #samll-menu:hover .menu{
+    display: block;
+  }
+  .menu{
+    height: 400px;
+    margin-left: -8px;
+    margin-top: 55px;
+    width: 100%;
+    float: left;
+
   }
   .button{
+    height: 80px;
     width: 100%;
+    text-align: center;
+  }
+  li{
     display: block;
-    height: 40px;
-    padding: 10px;
+    width: 100%;
+  }
+  header{
+    height: 120px;
+    background-color: #588c7e;
+  }
+  ul{
+    display: none;
+  }
+
+  .center{
+      font-size: 90px;
+      background-position: -200px -200px;
+      background-repeat: no-repeat;
+      height: 120%;
   }
 }
 @media only screen and (max-width:400px){
   .rwd{
     width: 100%;
+    padding-top: 60%;
+  }
+  .center{
+      font-size: 90px;
+
   }
 }
